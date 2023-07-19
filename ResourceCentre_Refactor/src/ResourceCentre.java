@@ -135,6 +135,7 @@ public class ResourceCentre {
 					camcorderList.get(i).getDescription(), 
 					ResourceCentre.showAvailability(camcorderList.get(i).getIsAvailable()),
 					camcorderList.get(i).getDueDate(),camcorderList.get(i).getOpticalZoom());
+			output += String.format(" %-84s\n", camcorderList.get(i).toString());
 		}
 		return output;
 	}
@@ -146,6 +147,7 @@ public class ResourceCentre {
 		 output += retrieveAllCamcorder(camcorderList);	
 		System.out.println(output);
 	}
+	
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
@@ -156,6 +158,7 @@ public class ResourceCentre {
 					chromebookList.get(i).getDescription(), 
 					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
 					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
+			output += String.format(" %-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
