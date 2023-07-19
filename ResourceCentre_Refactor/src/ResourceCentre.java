@@ -223,6 +223,7 @@ public class ResourceCentre {
 			return;
 		}
 		
+		
 		chromebookList.add(cb);
 		
 	}
